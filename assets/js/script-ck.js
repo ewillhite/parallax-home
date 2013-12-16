@@ -1,1 +1,1 @@
-$(function(){var e=skrollr.init();$(window).scroll(function(){var e=$(window).scrollTop();e>0?$("header").addClass("show"):$("header").removeClass("show")})});
+$(function(){parallax=function(){var e=skrollr.init();$(window).scroll(function(){var e=$(window).scrollTop();e>472?$("header").addClass("show"):$("header").removeClass("show")})};$(window).width()>1024&&parallax()});

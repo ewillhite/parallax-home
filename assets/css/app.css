@@ -38,25 +38,34 @@ header {
 section {
   position: relative; }
 
+.fixed, .fixed-2 {
+  background: url(../images/bg.jpg) no-repeat scroll 0 0 #3f6072; }
+
+.fixed-2 {
+  background-image: url(../images/bg2.jpg); }
+
 #curtain {
   background-color: #aaa;
   color: #fff;
   padding: 300px 0 500px;
   top: 0;
-  position: fixed;
   width: 100%;
   z-index: 1; }
   #curtain.skrollable-after {
     display: none; }
 
 #main {
-  top: 45px;
+  top: 41px;
   width: 100%; }
   #main.skrollable-after {
-    margin-top: 476px; }
+    margin-top: 472px; }
   #main section {
     padding: 15% 0;
     width: 100%; }
     #main section:nth-child(2n) {
-      background-color: #fff;
-      color: #fff; }
+      background-color: #fff; }
+
+.skrollr .fixed, .skrollr .fixed-2 {
+  background: none; }
+.skrollr #curtain {
+  position: fixed; }

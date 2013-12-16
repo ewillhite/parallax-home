@@ -43,13 +43,17 @@ header {
 section {
   position: relative;
 }
-
+.fixed, .fixed-2 {
+  background: url(../images/bg.jpg) no-repeat scroll 0 0 #3f6072;
+}
+.fixed-2 {
+  background-image: url(../images/bg2.jpg);
+}
 #curtain {
   background-color: #aaa;
   color: #fff;
   padding:300px 0 500px;
   top: 0;
-  position: fixed;
   width: 100%;
   z-index: 1;
   &.skrollable-after {
@@ -57,17 +61,25 @@ section {
   }
 }
 #main {
-  top:45px;
+  top:41px;
   width: 100%;
   &.skrollable-after {
-    margin-top: 476px;
+    margin-top: 472px;
   }
   section {
     padding: 15% 0;
     width: 100%;
     &:nth-child(2n) {
       background-color: #fff;
-      color: #fff;
     }
+  }
+}
+// Desktop Parallax Only
+.skrollr {
+  .fixed, .fixed-2 {
+    background:none;
+  }
+  #curtain {
+    position:fixed;
   }
 }
