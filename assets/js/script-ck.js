@@ -1,0 +1,1 @@
+$(function(){var e=skrollr.init();$(window).scroll(function(){var e=$(window).scrollTop();e>0?$("header").addClass("show"):$("header").removeClass("show")})});
